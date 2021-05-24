@@ -377,8 +377,16 @@
     <app-tow-way-binding></app-tow-way-binding>
   </div>
 
-  <div>
+  <!-- <div>
     <app-directives></app-directives>
+  </div> -->
+
+  <div>
+    <app-component-interaction [firstName]='name' (childEvent)='fName=$event'></app-component-interaction>
+  </div>
+
+  <div>
+    {{fName}}
   </div>
 
   <!-- Footer -->

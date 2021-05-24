@@ -10,6 +10,7 @@ import { BindingComponent } from './binding/binding.component';
 import { TowWayBindingComponent } from './tow-way-binding/tow-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DirectivesComponent } from './directives/directives.component';
     InterpolationComponent,
     BindingComponent,
     TowWayBindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    ComponentInteractionComponent
   ],
   imports: [
     BrowserModule,
@@ -29,4 +31,5 @@ import { DirectivesComponent } from './directives/directives.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
