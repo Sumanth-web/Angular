@@ -7,6 +7,8 @@ import { TestComponent } from './test/test.component';
 import { ComponentCheckComponent } from './component-check/component-check.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { BindingComponent } from './binding/binding.component';
+import { TowWayBindingComponent } from './tow-way-binding/tow-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { BindingComponent } from './binding/binding.component';
     TestComponent,
     ComponentCheckComponent,
     InterpolationComponent,
-    BindingComponent
+    BindingComponent,
+    TowWayBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
