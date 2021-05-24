@@ -1,8 +1,11 @@
 <h2 [ngStyle]=styling>Property Binding</h2>
-<input value="Sumanth" type="text" [id]=name>
+<input value="Sumanth" type="text" [id]=name #inputValue>
 <input value="Sumanth" type="text" [disabled]=isDisabled (click)='inputChange($event)'>
-<button (click)='onClick()'>Change</button>
+<button (click)='onClick(inputValue.value)'>Change</button>
 <button (click)="message='Welcome Sumanth'">Check</button>
-{{message}}
 
 <button [ngClass]=colorClasses (click)='onChange()'>Color</button>
+
+<h3>
+    {{message}}
+</h3>

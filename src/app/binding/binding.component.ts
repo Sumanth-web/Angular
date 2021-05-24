@@ -30,8 +30,9 @@ export class BindingComponent implements OnInit {
     console.log(event.target.value)
   }
 
-  onClick() {
+  onClick(value: any) {
     this.isDisabled = !this.isDisabled
+    this.message = "Welcome " + value
   }
 
   onChange() {
