@@ -1,0 +1,25 @@
+<h2>directives works!</h2>
+<br>
+<button type='button' (click)='onClick()'>Change</button>
+<br>
+<h2 *ngIf='success; else elseBlock'>
+    ngIf Sucessful
+</h2>
+<ng-template #elseBlock>
+    <h2>
+        ngIf Else block Sucessful
+    </h2>
+</ng-template>
+<br>
+<div [ngSwitch]=colorCase>
+    <div *ngSwitchCase="'red'">You have picked red color</div>
+    <div *ngSwitchCase="'green'">You have picked green color</div>
+    <div *ngSwitchCase="'blue'">You have picked blue color</div>
+    <div *ngSwitchDefault>Pick color again</div>
+</div>
+<br>
+<div *ngFor="let color of colors; index as i">
+    <p>
+        {{i+1}} {{color}}
+    </p>
+</div>

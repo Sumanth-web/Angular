@@ -9,6 +9,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { BindingComponent } from './binding/binding.component';
 import { TowWayBindingComponent } from './tow-way-binding/tow-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     ComponentCheckComponent,
     InterpolationComponent,
     BindingComponent,
-    TowWayBindingComponent
+    TowWayBindingComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
