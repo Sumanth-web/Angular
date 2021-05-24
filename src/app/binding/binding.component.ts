@@ -7,16 +7,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindingComponent implements OnInit {
 
+  message = ''
   name = 'Krishna'
   isDisabled = false;
+  colorChange = false
+
+  public colorClasses = {
+    "text-success": this.colorChange,
+    "text-warning": !this.colorChange
+  }
+
+  styling = {
+    fontStyle: "italic"
+  }
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  inputChange(event: any) {
+    console.log(event.target.value)
+  }
+
   onClick() {
     this.isDisabled = !this.isDisabled
+  }
+
+  onChange() {
+    console.log(this.colorChange)
+    this.colorChange = !this.colorChange
   }
 
 }
